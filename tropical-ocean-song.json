@@ -1,0 +1,200 @@
+{
+    "name": "Tropical Ocean Dreams",
+    "artist": "Claude",
+    "tempo": 95,
+    "instruments": {
+        "bubbles_synth": {
+            "type": "synth",
+            "settings": {
+                "oscillator": { "type": "sine" },
+                "envelope": {
+                    "attack": 0.2,
+                    "decay": 0.1,
+                    "sustain": 0.3,
+                    "release": 0.8
+                }
+            },
+            "volume": -15
+        },
+        "bass_synth": {
+            "type": "fmSynth",
+            "settings": {
+                "oscillator": { "type": "sine" },
+                "envelope": {
+                    "attack": 0.1,
+                    "decay": 0.2,
+                    "sustain": 0.8,
+                    "release": 1.2
+                }
+            },
+            "volume": -12
+        },
+        "ocean_pad": {
+            "type": "polySynth",
+            "settings": {
+                "oscillator": { "type": "sine" },
+                "envelope": {
+                    "attack": 1.5,
+                    "decay": 0.8,
+                    "sustain": 0.7,
+                    "release": 3.0
+                }
+            },
+            "volume": -16
+        },
+        "steel_drums": {
+            "type": "metalSynth",
+            "settings": {
+                "envelope": {
+                    "attack": 0.01,
+                    "decay": 0.3,
+                    "sustain": 0.1,
+                    "release": 0.5
+                }
+            },
+            "volume": -14
+        },
+        "waves": {
+            "type": "noise",
+            "settings": {
+                "type": "pink"
+            },
+            "volume": -25
+        }
+    },
+    "tracks": {
+        "ambient_waves": {
+            "instrument": "waves",
+            "volume": -5,
+            "loops": {
+                "wave_pattern": [
+                    { "note": null, "duration": "1n" },
+                    { "note": null, "duration": "1n" }
+                ]
+            },
+            "sequence": [
+                { "loop": "wave_pattern", "repeat": 12 }
+            ]
+        },
+        "deep_bass": {
+            "instrument": "bass_synth",
+            "volume": -8,
+            "loops": {
+                "main_bass": [
+                    { "note": "G1", "duration": "4n" },
+                    { "note": null, "duration": "4n" },
+                    { "note": "G1", "duration": "4n" },
+                    { "note": null, "duration": "4n" },
+                    { "note": "Bb1", "duration": "4n" },
+                    { "note": null, "duration": "4n" },
+                    { "note": "C2", "duration": "4n" },
+                    { "note": null, "duration": "4n" }
+                ],
+                "variation_bass": [
+                    { "note": "F1", "duration": "4n" },
+                    { "note": null, "duration": "4n" },
+                    { "note": "F1", "duration": "4n" },
+                    { "note": null, "duration": "4n" },
+                    { "note": "Eb1", "duration": "4n" },
+                    { "note": null, "duration": "4n" },
+                    { "note": "Bb1", "duration": "4n" },
+                    { "note": null, "duration": "4n" }
+                ]
+            },
+            "sequence": [
+                { "loop": "main_bass", "repeat": 4 },
+                { "loop": "variation_bass", "repeat": 2 },
+                { "loop": "main_bass", "repeat": 2 }
+            ]
+        },
+        "bubble_melody": {
+            "instrument": "bubbles_synth",
+            "volume": -10,
+            "loops": {
+                "bubble_line": [
+                    { "note": "D5", "duration": "8n" },
+                    { "note": "G5", "duration": "8n" },
+                    { "note": "A5", "duration": "8n" },
+                    { "note": "Bb5", "duration": "8n" },
+                    { "note": "D6", "duration": "8n" },
+                    { "note": "C6", "duration": "8n" },
+                    { "note": "Bb5", "duration": "8n" },
+                    { "note": "G5", "duration": "8n" }
+                ],
+                "ascending_bubbles": [
+                    { "note": "G4", "duration": "16n" },
+                    { "note": "Bb4", "duration": "16n" },
+                    { "note": "C5", "duration": "16n" },
+                    { "note": "D5", "duration": "16n" },
+                    { "note": "F5", "duration": "16n" },
+                    { "note": "G5", "duration": "16n" },
+                    { "note": "Bb5", "duration": "16n" },
+                    { "note": "C6", "duration": "16n" },
+                    { "note": null, "duration": "2n" }
+                ]
+            },
+            "sequence": [
+                { "loop": "bubble_line", "repeat": 2 },
+                { "loop": "ascending_bubbles", "repeat": 1 },
+                { "loop": "bubble_line", "repeat": 1 }
+            ]
+        },
+        "island_chords": {
+            "instrument": "ocean_pad",
+            "volume": -12,
+            "loops": {
+                "main_chords": [
+                    { "note": ["G3", "Bb3", "D4"], "duration": "2n" },
+                    { "note": ["F3", "A3", "C4"], "duration": "2n" },
+                    { "note": ["Eb3", "G3", "Bb3"], "duration": "2n" },
+                    { "note": ["Bb3", "D4", "F4"], "duration": "2n" }
+                ]
+            },
+            "sequence": [
+                { "loop": "main_chords", "repeat": 4 }
+            ]
+        },
+        "steel_drum_melody": {
+            "instrument": "steel_drums",
+            "volume": -10,
+            "loops": {
+                "main_steel": [
+                    { "note": "G4", "duration": "8n" },
+                    { "note": null, "duration": "8n" },
+                    { "note": "D4", "duration": "8n" },
+                    { "note": "G4", "duration": "8n" },
+                    { "note": "Bb4", "duration": "8n" },
+                    { "note": null, "duration": "8n" },
+                    { "note": "A4", "duration": "8n" },
+                    { "note": "G4", "duration": "8n" }
+                ],
+                "response_steel": [
+                    { "note": "F4", "duration": "8n" },
+                    { "note": null, "duration": "8n" },
+                    { "note": "C4", "duration": "8n" },
+                    { "note": "F4", "duration": "8n" },
+                    { "note": "A4", "duration": "8n" },
+                    { "note": null, "duration": "8n" },
+                    { "note": "G4", "duration": "8n" },
+                    { "note": "F4", "duration": "8n" }
+                ]
+            },
+            "sequence": [
+                { "loop": "main_steel", "repeat": 2 },
+                { "loop": "response_steel", "repeat": 2 },
+                { "loop": "main_steel", "repeat": 2 },
+                { "loop": "response_steel", "repeat": 2 }
+            ]
+        }
+    },
+    "sections": [
+        { "startTime": 0, "tracks": ["ambient_waves"] },
+        { "startTime": 8, "tracks": ["ambient_waves", "deep_bass"] },
+        { "startTime": 16, "tracks": ["ambient_waves", "deep_bass", "island_chords"] },
+        { "startTime": 24, "tracks": ["ambient_waves", "deep_bass", "island_chords", "bubble_melody"] },
+        { "startTime": 40, "tracks": ["ambient_waves", "deep_bass", "island_chords", "bubble_melody", "steel_drum_melody"] },
+        { "startTime": 56, "tracks": ["ambient_waves", "deep_bass", "island_chords", "steel_drum_melody"] },
+        { "startTime": 64, "tracks": ["ambient_waves", "deep_bass", "bubble_melody"] },
+        { "startTime": 72, "tracks": ["ambient_waves"] }
+    ]
+}
