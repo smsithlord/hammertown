@@ -1,0 +1,330 @@
+{
+  "name": "Midnight Circus",
+  "artist": "Danny Elfman Tribute",
+  "tempo": 132,
+  "instruments": {
+    "main_melody": {
+      "type": "fmSynth",
+      "settings": {
+        "harmonicity": 3.01,
+        "modulationIndex": 14,
+        "oscillator": {
+          "type": "triangle"
+        },
+        "envelope": {
+          "attack": 0.03,
+          "decay": 0.3,
+          "sustain": 0.7,
+          "release": 0.8
+        }
+      },
+      "volume": -10
+    },
+    "quirky_counter": {
+      "type": "synth",
+      "settings": {
+        "oscillator": {
+          "type": "sawtooth"
+        },
+        "envelope": {
+          "attack": 0.01,
+          "decay": 0.1,
+          "sustain": 0.6,
+          "release": 0.5
+        }
+      },
+      "volume": -15
+    },
+    "bass_line": {
+      "type": "monoSynth",
+      "settings": {
+        "oscillator": {
+          "type": "sine"
+        },
+        "envelope": {
+          "attack": 0.04,
+          "decay": 0.2,
+          "sustain": 0.9,
+          "release": 1.2
+        }
+      },
+      "volume": -12
+    },
+    "playful_bells": {
+      "type": "metalSynth",
+      "settings": {
+        "frequency": 200,
+        "harmonicity": 5.1,
+        "modulationIndex": 32,
+        "envelope": {
+          "attack": 0.01,
+          "decay": 0.5,
+          "release": 0.8
+        }
+      },
+      "volume": -20
+    },
+    "orchestral_pad": {
+      "type": "polySynth",
+      "settings": {
+        "oscillator": {
+          "type": "sine"
+        },
+        "envelope": {
+          "attack": 0.8,
+          "decay": 1.2,
+          "sustain": 0.8,
+          "release": 3.0
+        }
+      },
+      "volume": -14
+    },
+    "percussion": {
+      "type": "membraneSynth",
+      "settings": {
+        "pitchDecay": 0.05,
+        "octaves": 4,
+        "oscillator": {
+          "type": "sine"
+        },
+        "envelope": {
+          "attack": 0.001,
+          "decay": 0.4,
+          "sustain": 0.01,
+          "release": 1.4,
+          "attackCurve": "exponential"
+        }
+      },
+      "volume": -15
+    }
+  },
+  "tracks": {
+    "melody": {
+      "instrument": "main_melody",
+      "volume": -8,
+      "loops": {
+        "main_theme": [
+          { "note": "B4", "duration": "8n" },
+          { "note": "E5", "duration": "8n" },
+          { "note": "G5", "duration": "8n" },
+          { "note": "F#5", "duration": "8n" },
+          { "note": "E5", "duration": "8n" },
+          { "note": "B4", "duration": "8n" },
+          { "note": "D5", "duration": "8n" },
+          { "note": "E5", "duration": "4n" },
+          
+          { "note": "A4", "duration": "8n" },
+          { "note": "C5", "duration": "8n" },
+          { "note": "E5", "duration": "8n" },
+          { "note": "D5", "duration": "8n" },
+          { "note": "C5", "duration": "8n" },
+          { "note": "A4", "duration": "8n" },
+          { "note": "B4", "duration": "4n" }
+        ],
+        "secondary_theme": [
+          { "note": "E5", "duration": "16n" },
+          { "note": "F#5", "duration": "16n" },
+          { "note": "G5", "duration": "8n" },
+          { "note": "F#5", "duration": "16n" },
+          { "note": "E5", "duration": "16n" },
+          { "note": "D5", "duration": "8n" },
+          
+          { "note": "C5", "duration": "16n" },
+          { "note": "D5", "duration": "16n" },
+          { "note": "E5", "duration": "8n" },
+          { "note": "D5", "duration": "16n" },
+          { "note": "C5", "duration": "16n" },
+          { "note": "B4", "duration": "8n" },
+          
+          { "note": "A4", "duration": "16n" },
+          { "note": "B4", "duration": "16n" },
+          { "note": "C5", "duration": "8n" },
+          { "note": "D5", "duration": "16n" },
+          { "note": "E5", "duration": "16n" },
+          { "note": "F#5", "duration": "8n" },
+          
+          { "note": "G5", "duration": "8n." },
+          { "note": "E5", "duration": "4n" }
+        ]
+      },
+      "sequence": [
+        { "loop": "main_theme", "repeat": 2 },
+        { "loop": "secondary_theme", "repeat": 1 },
+        { "loop": "main_theme", "repeat": 1 }
+      ]
+    },
+    "counter_melody": {
+      "instrument": "quirky_counter",
+      "volume": -10,
+      "loops": {
+        "quirky_line": [
+          { "note": null, "duration": "4n" },
+          { "note": "G4", "duration": "16n" },
+          { "note": "A4", "duration": "16n" },
+          { "note": "B4", "duration": "16n" },
+          { "note": "C5", "duration": "16n" },
+          
+          { "note": "D5", "duration": "8n" },
+          { "note": null, "duration": "8n" },
+          { "note": "C5", "duration": "8n" },
+          { "note": null, "duration": "8n" },
+          
+          { "note": "B4", "duration": "8n" },
+          { "note": "A4", "duration": "8n" },
+          { "note": "G4", "duration": "8n" },
+          { "note": "F#4", "duration": "8n" }
+        ],
+        "playful_response": [
+          { "note": "E4", "duration": "16n" },
+          { "note": "G4", "duration": "16n" },
+          { "note": "B4", "duration": "16n" },
+          { "note": "D5", "duration": "16n" },
+          { "note": "E5", "duration": "8n" },
+          { "note": "B4", "duration": "8n" },
+          
+          { "note": "C5", "duration": "16n" },
+          { "note": "A4", "duration": "16n" },
+          { "note": "F#4", "duration": "16n" },
+          { "note": "D4", "duration": "16n" },
+          { "note": "E4", "duration": "8n" },
+          { "note": null, "duration": "8n" }
+        ]
+      },
+      "sequence": [
+        { "loop": "quirky_line", "repeat": 2 },
+        { "loop": "playful_response", "repeat": 2 }
+      ]
+    },
+    "bass": {
+      "instrument": "bass_line",
+      "volume": -6,
+      "loops": {
+        "ominous_bass": [
+          { "note": "E2", "duration": "4n" },
+          { "note": "E2", "duration": "4n" },
+          { "note": "G2", "duration": "4n" },
+          { "note": "A2", "duration": "4n" },
+          
+          { "note": "B2", "duration": "4n" },
+          { "note": "B2", "duration": "4n" },
+          { "note": "A2", "duration": "4n" },
+          { "note": "G2", "duration": "4n" }
+        ],
+        "walking_bass": [
+          { "note": "E2", "duration": "8n" },
+          { "note": "G2", "duration": "8n" },
+          { "note": "A2", "duration": "8n" },
+          { "note": "B2", "duration": "8n" },
+          
+          { "note": "C3", "duration": "8n" },
+          { "note": "B2", "duration": "8n" },
+          { "note": "A2", "duration": "8n" },
+          { "note": "G2", "duration": "8n" },
+          
+          { "note": "F#2", "duration": "8n" },
+          { "note": "E2", "duration": "8n" },
+          { "note": "D2", "duration": "8n" },
+          { "note": "C2", "duration": "8n" },
+          
+          { "note": "B1", "duration": "8n" },
+          { "note": "C2", "duration": "8n" },
+          { "note": "D2", "duration": "8n" },
+          { "note": "E2", "duration": "8n" }
+        ]
+      },
+      "sequence": [
+        { "loop": "ominous_bass", "repeat": 2 },
+        { "loop": "walking_bass", "repeat": 2 }
+      ]
+    },
+    "bells": {
+      "instrument": "playful_bells",
+      "volume": -16,
+      "loops": {
+        "bell_motif": [
+          { "note": "E5", "duration": "8n" },
+          { "note": null, "duration": "8n" },
+          { "note": "B4", "duration": "8n" },
+          { "note": null, "duration": "8n" },
+          
+          { "note": "G5", "duration": "8n" },
+          { "note": null, "duration": "8n" },
+          { "note": "E5", "duration": "8n" },
+          { "note": null, "duration": "8n" }
+        ],
+        "bell_cascade": [
+          { "note": "B5", "duration": "16n" },
+          { "note": "G5", "duration": "16n" },
+          { "note": "E5", "duration": "16n" },
+          { "note": "B4", "duration": "16n" },
+          { "note": null, "duration": "4n" },
+          
+          { "note": "A5", "duration": "16n" },
+          { "note": "F#5", "duration": "16n" },
+          { "note": "D5", "duration": "16n" },
+          { "note": "A4", "duration": "16n" },
+          { "note": null, "duration": "4n" }
+        ]
+      },
+      "sequence": [
+        { "loop": "bell_motif", "repeat": 4 },
+        { "loop": "bell_cascade", "repeat": 2 }
+      ]
+    },
+    "chords": {
+      "instrument": "orchestral_pad",
+      "volume": -12,
+      "loops": {
+        "minor_progression": [
+          { "note": ["E3", "G3", "B3"], "duration": "2n" },  // E minor
+          { "note": ["D3", "F#3", "A3"], "duration": "2n" },  // D major
+          { "note": ["C3", "E3", "G3"], "duration": "2n" },  // C major
+          { "note": ["B2", "D3", "F#3"], "duration": "2n" }   // B minor
+        ],
+        "tension_chords": [
+          { "note": ["E3", "G3", "B3", "D4"], "duration": "2n" },  // E minor 7
+          { "note": ["F#3", "A3", "C4", "E4"], "duration": "2n" },  // F# half-diminished
+          { "note": ["G3", "B3", "D4", "F#4"], "duration": "2n" },  // G major 7
+          { "note": ["A3", "C4", "E4", "G4"], "duration": "2n" }    // A minor 7
+        ]
+      },
+      "sequence": [
+        { "loop": "minor_progression", "repeat": 2 },
+        { "loop": "tension_chords", "repeat": 1 }
+      ]
+    },
+    "drums": {
+      "instrument": "percussion",
+      "volume": -10,
+      "loops": {
+        "steady_beat": [
+          { "note": "C2", "duration": "4n" },
+          { "note": "C2", "duration": "4n" },
+          { "note": "C2", "duration": "4n" },
+          { "note": "C2", "duration": "4n" }
+        ],
+        "accented_beat": [
+          { "note": "C2", "duration": "4n" },
+          { "note": "G1", "duration": "8n" },
+          { "note": "G1", "duration": "8n" },
+          { "note": "C2", "duration": "4n" },
+          { "note": "G1", "duration": "8n" },
+          { "note": "G1", "duration": "8n" }
+        ]
+      },
+      "sequence": [
+        { "loop": "steady_beat", "repeat": 4 },
+        { "loop": "accented_beat", "repeat": 4 }
+      ]
+    }
+  },
+  "sections": [
+    { "startTime": 0, "tracks": ["drums"] },
+    { "startTime": 8, "tracks": ["drums", "bass", "bells"] },
+    { "startTime": 16, "tracks": ["drums", "bass", "bells", "melody"] },
+    { "startTime": 32, "tracks": ["drums", "bass", "bells", "melody", "counter_melody"] },
+    { "startTime": 48, "tracks": ["drums", "bass", "bells", "melody", "counter_melody", "chords"] },
+    { "startTime": 64, "tracks": ["bells", "melody", "chords"] },
+    { "startTime": 80, "tracks": ["drums", "bass", "bells", "melody", "counter_melody", "chords"] }
+  ]
+}
